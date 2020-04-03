@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
   <header class="page-header">
     <a class="page-header__logo" href="#">
       <img class="page-header__logo-image" src="img/logo.png" width="86" height="35" alt="Логотип с надписью 'Mishka'">
@@ -24,13 +25,14 @@
       </div>
     </nav>
   </header>
+
   <main class="page-main">
     <section class="catalog">
-      <h1 class="catalog__title">Каталог товаров</h1>
+      <h1 class="page-main__title">Каталог товаров</h1>
       <ul class="catalog__wrapper catalog-list">
-        <li class="caatalog-list__item product">
-          <figure class="product__img" tabindex="0">
-            <img class="product-img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
+        <li class="catalog-list__item product">
+          <figure class="product__img">
+            <img class="product__img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
           </figure>
           <div class="product__description description">
             <span class="description__title">Зайчик-попрыгайчик</span>
@@ -38,9 +40,9 @@
             <b class="description__price">1 200 руб.</b>
           </div>
         </li>
-         <li class="caatalog-list__item product">
-          <figure class="product__img" tabindex="0">
-            <img class="product-img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
+         <li class="catalog-list__item product">
+          <figure class="product__img">
+            <img class="product__img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
           </figure>
           <div class="product__description description">
             <span class="description__title">Корзинка для белья</span>
@@ -48,20 +50,22 @@
             <b class="description__price">690 руб.</b>
           </div>
         </li>
-         <li class="caatalog-list__item product">
-          <figure class="product__img" tabindex="0">
-            <img class="product-img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
+         <li class="catalog-list__item product">
+          <figure class="product__img">
+            <img class="product__img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
           </figure>
-          <div class="product__description description">
-            <span class="description__title">Большая корзинка для игрушек</span>
-            <p class="description__value">Диаметр 30 см, высота 30 см</p>
-            <b class="description__price">руб.</b>
+          <div class="product__description">
+            <span class="product__description--title">Большая корзинка для игрушек</span>
+            <p class="product__description--value">Диаметр 30 см, высота 30 см</p>
+            <b class="product__description--price">руб.</b>
           </div>
         </li>
       </ul>
       <aside class="process" aria-label="Дополнительная информация для клиента">
         <h2 class="process__title">Процесс производства</h2>
-        <img class="process__img-video" src="img/.jpg" width="" height="" alt="">
+        <div class="process__video-wrapper">
+           <img class="process__img-video" src="img/.jpg" width="" height="" alt="">
+        </div>
         <p class="process__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
@@ -69,22 +73,23 @@
       </aside>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="social">
-      <ul class="social__list">
-        <li><a class="social-instagram" href="https://www.instagram.com/">Instagram</a></li>
-        <li><a class="social-facebook" href="https://www.facebook.com/">Facebook/</a></li>
-        <li><a class="social-twitter" href="https://twitter.com/">Twitter</a></li>
+
+ <footer class="page-footer">
+    <div class="page-footer__social">
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-instagram" href="https://www.instagram.com/"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social-list__item"><a class="social-facebook" href="https://www.facebook.com/"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-list__item"><a class="social-twitter" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
     </div>
     <div class="developer">
       <p class="developer__text">Разработано</p>
-      <a class="htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на профессиональный онлайн‑курс HTML и CSS">
-        <img class="logo-htmlacademy" width="27" height="35" src="img/logo-html.svg" alt="logo-htmlacademy">
+      <a class="developer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на профессиональный онлайн‑курс HTML и CSS">
+        <img class="developer__logo-htmlacademy" width="27" height="35" src="img/logo-html.svg" alt="logo-htmlacademy">
       </a>
     </div>
   </footer>
-  <div class="modal-wrapper visually-hidden">
+  <div class="modal-wrapper">
     <form class="form-basket" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend class="form-basket__title">Добавить в корзину</legend>
@@ -99,7 +104,7 @@
           <input type="radio" name="size" value="L" aria-label="размер 'L'">
         </label>
       </fieldset>
-      <button class="submit-btn" type="submit">Добавить</button>
+      <button class="button-submit" type="submit">Добавить</button>
     </form>
   </div>
 </body>

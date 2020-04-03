@@ -14,11 +14,11 @@
       <button class="main-nav__toggle">Открыть меню</button>
       <div class="main-nav__wrapper" aria-label="Меню сайта">
         <ul class="main-nav__list site-list">
-          <li class="site-list__link"><a class="button-catalog" href="#">Каталог товаров</a></li>
-          <li class="site-list__link"><a class="button-order" href="#">Вязание на заказ</a></li>
-          <li class="site-list__link"><a class="button-search" href="#">Поиск по сайту</a></li>
-          <li class="site-list__link">
-            <a class="button-basket" href="#" aria-label="Корзина с товарами">Корзина: <span>пока пуста</span></a>
+          <li class="site-list__item"><a class="site-list__link button-catalog" href="#">Каталог товаров</a></li>
+          <li class="site-list__item"><a class="site-list__link button-order" href="#">Вязание на заказ</a></li>
+          <li class="site-list__item"><a class="site-list__link button-search" href="#">Поиск по сайту</a></li>
+          <li class="site-list__item">
+            <a class="site-list__link button-basket" href="#" aria-label="Корзина с товарами">Корзина: <span>пока пуста</span></a>
           </li>
         </ul>
       </div>
@@ -66,15 +66,17 @@
     <section class="reviews" aria-label="Раздел отзывов">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviewer-slider">
-        <p class="reviewer-slider__text">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </p>
-        <span class="reviewer-slider__reviewer-name">Анастасия Красильникова</span>
-        <span class="reviewer-slider__reviewer-nickname">@misssssiskras</span>
-      </div>
-      <div class="reviewer-slider-control">
-        <button class="reviewer-slider-control__previous-btn">предыдущий отзыв</button>
-        <button class="reviewer-slider-control__next-btn">следующий отзыв</button>
+        <div class="reviewer-slider__item">
+          <p class="reviewer-slider__text">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </p>
+          <span class="reviewer-slider__reviewer-name">Анастасия Красильникова</span>
+          <span class="reviewer-slider__reviewer-nickname">@misssssiskras</span>
+        </div>
+        <div class="reviewer-slider-control">
+          <button class="reviewer-slider-control__previous-btn"><span class="visually-hidden">предыдущий отзыв</span></button>
+          <button class="reviewer-slider-control__next-btn"><span class="visually-hidden">следующий отзыв</span></button>
+        </div>
       </div>
       <button class="button">написать</button>
     </section>
@@ -96,18 +98,19 @@
       <button class="button">Напишите нам</button>
     </section>
   </main>
+
   <footer class="page-footer">
-    <div class="social">
-      <ul class="social__list">
-        <li><a class="social-instagram" href="https://www.instagram.com/">Instagram</a></li>
-        <li><a class="social-facebook" href="https://www.facebook.com/">Facebook/</a></li>
-        <li><a class="social-twitter" href="https://twitter.com/">Twitter</a></li>
+    <div class="page-footer__social">
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-instagram" href="https://www.instagram.com/"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social-list__item"><a class="social-facebook" href="https://www.facebook.com/"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-list__item"><a class="social-twitter" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
     </div>
     <div class="developer">
       <p class="developer__text">Разработано</p>
-      <a class="htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на профессиональный онлайн‑курс HTML и CSS">
-        <img class="logo-htmlacademy" width="27" height="35" src="img/logo-html.svg" alt="logo-htmlacademy">
+      <a class="developer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на профессиональный онлайн‑курс HTML и CSS">
+        <img class="developer__logo-htmlacademy" width="27" height="35" src="img/logo-html.svg" alt="logo-htmlacademy">
       </a>
     </div>
   </footer>
