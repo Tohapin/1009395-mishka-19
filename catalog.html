@@ -15,11 +15,19 @@
       <button class="main-nav__toggle">Открыть меню</button>
       <div class="main-nav__wrapper" aria-label="Меню сайта">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="button-catalog" href="#">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="button-order" href="#">Вязание на заказ</a></li>
-          <li class="site-list__item"><a class="button-search" href="#">Поиск по сайту</a></li>
           <li class="site-list__item">
-            <a class="button-basket" href="#" aria-label="Корзина с товарами">Корзина: <span>пока пуста</span></a>
+            <a class="site-list__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a class="button-basket" href="#" aria-label="Корзина с товарами">Корзина:
+              <span>пока пуста</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -34,20 +42,10 @@
           <figure class="product__img">
             <img class="product__img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
           </figure>
-          <div class="product__description description">
-            <span class="description__title">Зайчик-попрыгайчик</span>
-            <p class="description__value">Рост 30 см, вес 200 г</p>
-            <b class="description__price">1 200 руб.</b>
-          </div>
-        </li>
-         <li class="catalog-list__item product">
-          <figure class="product__img">
-            <img class="product__img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
-          </figure>
-          <div class="product__description description">
-            <span class="description__title">Корзинка для белья</span>
-            <p class="description__value">Диаметр 15 см, высота 10 см</p>
-            <b class="description__price">690 руб.</b>
+          <div class="product__description">
+            <span class="product__description-title">Зайчик-попрыгайчик</span>
+            <p class="product__description-value">Рост 30 см, вес 200 г</p>
+            <b class="product__description-price">1 200 руб.</b>
           </div>
         </li>
          <li class="catalog-list__item product">
@@ -55,9 +53,19 @@
             <img class="product__img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
           </figure>
           <div class="product__description">
-            <span class="product__description--title">Большая корзинка для игрушек</span>
-            <p class="product__description--value">Диаметр 30 см, высота 30 см</p>
-            <b class="product__description--price">руб.</b>
+            <span class="product__description-title">Корзинка для белья</span>
+            <p class="product__description-value">Диаметр 15 см, высота 10 см</p>
+            <b class="product__description-price">690 руб.</b>
+          </div>
+        </li>
+         <li class="catalog-list__item product">
+          <figure class="product__img">
+            <img class="product__img-content" width="260" height="195" src="img/item/item-1.jpg" alt="">
+          </figure>
+          <div class="product__description">
+            <span class="product__description-title">Большая корзинка для игрушек</span>
+            <p class="product__description-value">Диаметр 30 см, высота 30 см</p>
+            <b class="product__description-price">руб.</b>
           </div>
         </li>
       </ul>
@@ -69,7 +77,7 @@
         <p class="process__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
-        <button class="section-action-btn">СДелать заказ</button>
+        <button class="button">СДелать заказ</button>
       </aside>
     </section>
   </main>
@@ -77,9 +85,21 @@
  <footer class="page-footer">
     <div class="page-footer__social">
       <ul class="social-list">
-        <li class="social-list__item"><a class="social-instagram" href="https://www.instagram.com/"><span class="visually-hidden">Instagram</span></a></li>
-        <li class="social-list__item"><a class="social-facebook" href="https://www.facebook.com/"><span class="visually-hidden">Facebook</span></a></li>
-        <li class="social-list__item"><a class="social-twitter" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social-list__item">
+          <a class="site-list__link" href="https://www.instagram.com/">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="site-list__link" href="https://www.facebook.com/">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="site-list__link" href="https://twitter.com/">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
       </ul>
     </div>
     <div class="developer">
@@ -89,6 +109,7 @@
       </a>
     </div>
   </footer>
+
   <div class="modal-wrapper">
     <form class="form-basket" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
@@ -104,7 +125,7 @@
           <input type="radio" name="size" value="L" aria-label="размер 'L'">
         </label>
       </fieldset>
-      <button class="button-submit" type="submit">Добавить</button>
+      <button class="button" type="submit">Добавить</button>
     </form>
   </div>
 </body>
