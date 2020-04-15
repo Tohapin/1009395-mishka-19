@@ -1,82 +1,22 @@
-@import "fonts.less";
-@import "page-header.less";
-@import "main-nav.less";
-@import "site-list.less";
-@import "page-main.less";
-@import "site-showcase.less";
-@import "mini-navigate.less";
-@import "product-of-the-week.less";
-@import "characteristics-list.less";
-@import "about.less";
-@import "page-footer.less";
-@import "social-list.less";
-@import "developer.less";
-@import "catalog.less";
-@import "catalog-list.less";
-@import "product.less";
+@import "general/variables.less";
+@import "general/mixins.less";
+@import "general/fonts.less";
 
-.site-body{
-  margin: 0;
-}
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/site-list.less";
+@import "blocks/page-main.less";
+@import "blocks/site-showcase.less";
+@import "blocks/mini-navigate.less";
+@import "blocks/product-of-the-week.less";
+@import "blocks/characteristics-list.less";
+@import "blocks/about.less";
+@import "blocks/page-footer.less";
+@import "blocks/social-list.less";
+@import "blocks/developer.less";
+@import "blocks/catalog.less";
+@import "blocks/catalog-list.less";
+@import "blocks/product.less";
+@import "blocks/button.less";
 
-.container(@width) {
-  box-sizing: border-box;
-  width: @width;
-  margin: 0 auto;
-}
-
-.button{
-  border: solid 2px #444444;
-  background-color: transparent;
-  padding: 15px 0 13px 0;
-
-  font-family: @open-sans;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.18;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-// скриншот-подложка
-@tablet-width: 768px;
-@desktop-width: 1200px;
-
-body {
-  width: 100%;
-  height: 100%;
-  background: url("../preview/mishka-catalog-mobile.png") no-repeat left top;
-  background-size: 100%;
-}
-
-
-@media (min-width: @tablet-width) {
-  body {
-    background: url("../preview/bb-tablet.png") no-repeat 50% 0;
-    background-size: 1178px auto;
-  }
-}
-
-
-@media (min-width: @desktop-width) {
-  body {
-    background: url("../preview/bb-desktop.png") no-repeat 50% 0;
-    background-size: 1391px auto;
-  }
-}
+@import "general/general.less";

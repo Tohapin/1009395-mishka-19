@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.main-nav-hidden{
+	display: none;
+}
+
+
+//отдельная часть кода, временная подложка для верстки, в конце будет удалена
+body {
+	width: 100%;
+	height: 100%;
+	background: url("../../preview/mishka-index-mobile.png") no-repeat left top;
+	background-size: 100%;
+}
+
+@media (min-width: @tablet-width) {
+	body {
+		background: url("../../preview/bb-tablet.png") no-repeat 50% 0;
+		background-size: 1178px auto;
+	}
+}
+
+
+@media (min-width: @desktop-width) {
+	body {
+		background: url("../../preview/bb-desktop.png") no-repeat 50% 0;
+		background-size: 1391px auto;
+	}
+}
