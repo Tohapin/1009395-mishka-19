@@ -1,0 +1,53 @@
+.mini-navigate {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.mini-navigate__btn {
+  position: relative;
+  padding: 26px 140px 32px 29px;
+
+  font-family: @open-sans;
+  color: @white-font;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+  text-decoration: none;
+}
+
+.mini-navigate__btn--interior {
+  background-color: #63d1bb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 35px;
+    margin: auto 0;
+    display: block;
+    width: 40px;
+    height: 62px;
+    background: url("../img/icon-interior.svg") no-repeat center center;
+    opacity: 0.2;
+  }
+}
+
+.mini-navigate__btn--toys {
+  background-color: #56c3b2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 27px;
+    margin: auto 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url("../img/icon-toy.svg") no-repeat center center;
+    opacity: 0.1;
+  }
+}
