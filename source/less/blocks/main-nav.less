@@ -1,8 +1,8 @@
-.main-nav{
+.main-nav {
   position: relative;
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   position: absolute;
   top: -48px;
   right: 31px;
@@ -15,27 +15,18 @@
 
   cursor: pointer;
   border: none;
-
-  &:hover,
-  &:active {
-
-  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 2px;
 
   background-color: #000000;
   box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -68,23 +59,11 @@
   }
 }
 
-.main-nav__wrapper{
+.main-nav__wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.main-nav__wrapper--hidden{
+.main-nav__wrapper--hidden {
   display: none;
-}
-
-.main-nav__list{
-
-}
-
-@media (min-width: @tablet-width) {
-
-}
-
-@media (min-width: @desktop-width) {
-
 }
