@@ -50,3 +50,134 @@
 .contacts button {
   .container(260px);
 }
+
+@media (min-width: @tablet-width-viewport) {
+  .contacts {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__title {
+    .container(@tablet-width);
+    position: relative;
+    margin-bottom: 24px;
+
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 2.5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -8px;
+      right: 2px;
+      width: 50px;
+      height: 85px;
+      background: url("../img/icon-flag.svg") no-repeat;
+      background-position: top;
+      background-size: contain;
+    }
+  }
+
+  .contacts__list {
+    .container(@tablet-width);
+    margin-bottom: 45px;
+  }
+
+  .contacts__list tr {
+    border-spacing: 0;
+    width: 50%;
+
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.76;
+    letter-spacing: 1px;
+  }
+
+  .contacts__list tbody {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts__list-parameter {
+    width: 78px;
+  }
+
+  .contacts__map {
+    margin-bottom: 52px;
+  }
+
+  .contacts button {
+    width: 230px;
+  }
+}
+
+@media (min-width: @desktop-width-viewport) {
+  .contacts {
+    .container(@desktop-width);
+    position: relative;
+    flex-direction: column;
+    margin-top: 170px;
+    margin-bottom: 103px;
+  }
+
+  .contacts__title {
+    position: relative;
+    margin: 0;
+    padding-left: 171px;
+    margin-bottom: 35px;
+
+    font-size: 53px;
+    line-height: 1.08;
+    letter-spacing: 3px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -10px;
+      left: 62px;
+      width: 50px;
+      height: 85px;
+      background: url("../img/icon-flag.svg") no-repeat;
+      background-position: top;
+      background-size: contain;
+    }
+  }
+
+  .contacts__list {
+    max-width: 300px;
+    margin: 0;
+    margin-left: 175px;
+    margin-bottom: 65px;
+  }
+
+  .contacts__list tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__list tr {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .contacts__list-parameter {
+    width: 78px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 525px;
+  }
+
+  .contacts button {
+    width: 230px;
+    margin: 0;
+    margin-left: 175px;
+  }
+}

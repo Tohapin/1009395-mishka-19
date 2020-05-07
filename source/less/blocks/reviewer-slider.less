@@ -49,3 +49,64 @@
 .reviewer-slider__btn--next::before {
   content: url("../../img/icon-right-arrow.svg");
 }
+
+@media (min-width: @tablet-width-viewport) {
+  .reviewer-slider__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviewer-slider {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .reviewer-slider__reviewer-name {
+    letter-spacing: 1.6px;
+  }
+
+  .reviewer-slider__text {
+    margin-bottom: 60px;
+
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .reviewer-slider__control {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+
+  button.reviewer-slider__btn {
+    width: 88px;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width-viewport) {
+  .reviewer-slider {
+    padding-left: 173px;
+    padding-right: 100px;
+  }
+
+  .reviewer-slider__text {
+    margin-bottom: 40px;
+
+    line-height: 1.8;
+  }
+
+  .reviewer-slider__control {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+}

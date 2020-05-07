@@ -16,7 +16,7 @@
 
   font-family: @open-sans;
   color: @black-font;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -45,4 +45,232 @@
   height: 18px;
   background: url("../img/icon-search.svg") no-repeat center center;
   opacity: 0.2;
+}
+
+.site-list__item--logo {
+  display: none;
+}
+
+.site-list__item--delivery {
+  display: none;
+}
+
+.site-list__item--new-arrivals {
+  display: none;
+}
+
+.site-list__item--sale {
+  display: none;
+}
+
+@media (min-width: @tablet-width-viewport) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 88px;
+  }
+
+  .site-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .site-list__link {
+    margin: 0;
+  }
+
+  .site-list__item--logo {
+    display: block;
+    order: 1;
+    width: 48%;
+    padding-top: 23px;
+    padding-bottom: 15px;
+  }
+
+  .site-list__item--catalog {
+    order: 4;
+    width: auto;
+    padding-right: 38px;
+    padding-top: 20px;
+    box-shadow: none;
+  }
+
+  .site-list__item--knitting {
+    order: 5;
+    padding-top: 20px;
+    box-shadow: none;
+  }
+
+  .site-list__item--search {
+    order: 1;
+    width: 18px;
+    padding-left: 33px;
+    padding-right: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: -1px 0 #ececec;
+  }
+
+  .site-list__item--new-arrivals {
+    display: none;
+  }
+
+  .site-list__item--sale {
+    display: none;
+  }
+
+  .site-list__item--basket {
+    order: 3;
+    width: auto;
+    padding-left: 83px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: -1px 0 #ececec;
+  }
+
+  .site-list__link--basket {
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+  }
+
+  .site-list__link--basket::before {
+    top: 2px;
+    left: -50px;
+  }
+
+  .site-list__item--delivery {
+    margin-left: auto;
+    display: block;
+    order: 6;
+    padding-top: 18px;
+    box-shadow: none;
+  }
+
+  .site-list__link--search {
+    font-size: 0;
+  }
+
+  .site-list__link--search::before {
+    top: -5px;
+    left: 0;
+  }
+
+  .site-list__link--delivery {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: right;
+    color: @gray-font;
+  }
+}
+
+
+@media (min-width: @desktop-width-viewport) {
+  .site-list__link {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .site-list__item--logo {
+    order: 3;
+    flex-grow: 1;
+    width: auto;
+    padding: 0;
+    padding-top: 10px;
+    margin-left: 41px;
+    margin-right: 35px;
+  }
+
+  .site-list__item--catalog {
+    order: 1;
+    padding: 0;
+    padding-right: 35px;
+    box-shadow: 1px 0 #ececec;
+
+    line-height: 1.41;
+  }
+
+  .site-list__item--knitting {
+    order: 2;
+    padding-top: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    line-height: 1.41;
+  }
+
+  .site-list__item--search {
+    order: 4;
+    padding-bottom: 0;
+  }
+
+  .site-list__link--search {
+    font-size: 0;
+    line-height: 1.41;
+  }
+
+  .site-list__link--search::before {
+    top: -18px;
+    left: 0;
+  }
+
+  .site-list__item--basket {
+    order: 5;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 85px;
+
+    line-height: 1.41;
+  }
+
+  .site-list__item--new-arrivals {
+    display: block;
+    order: 6;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .site-list__link--new-arrivals {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+  }
+
+  .site-list__item--sale {
+    display: block;
+    order: 7;
+    padding: 0;
+    padding-left: 60px;
+    padding-top: 20px;
+    box-shadow: none;
+  }
+
+  .site-list__link--sale {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .site-list__item--delivery {
+    display: block;
+    order: 8;
+    margin-left: auto;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .site-list__link--delivery {
+    font-size: 15px;
+    line-height: 1.6;
+  }
 }

@@ -10,3 +10,31 @@
 .catalog-list__item {
   margin-bottom: 30px;
 }
+
+@media (min-width: @tablet-width-viewport) {
+  .catalog-list {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .catalog-list__item {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width-viewport) {
+  .catalog-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 115px;
+  }
+
+  .catalog-list__item {
+    margin-bottom: 58px;
+    margin-left: 50px;
+  }
+
+  .catalog-list__item:first-child {
+    margin-left: 0;
+  }
+}
