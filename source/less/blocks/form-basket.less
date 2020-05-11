@@ -1,0 +1,146 @@
+.form-basket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.form-basket__title {
+  font-family: @open-sans;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: @very-dark-font;
+}
+
+.form-basket__descripton {
+  margin-top: 18px;
+  margin-bottom: 27px;
+
+  font-family: @open-sans;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: @very-dark-font;
+}
+
+.form-basket__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.form-basket__list li {
+  position: relative;
+  min-height: 48px;
+  flex-grow: 1;
+}
+
+.form-basket__list li:not(:first-child) {
+  margin-left: 6px;
+}
+
+.form-basket__input-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-basket__radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 1px 1px;
+  border: 2px solid rgb(236, 236, 236);
+  min-width: 36px;
+  min-height: 34px;
+
+  font-family: @open-sans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.94;
+  color: @very-dark-font;
+}
+
+.form-basket__input-radio:checked + label {
+  border-color: #63d1bb;
+}
+
+.form-basket__radio:hover {
+  cursor: pointer;
+  border-color: #c7c7c7;
+}
+
+.form-basket__submit {
+  display: block;
+  border: none;
+  background-color: #63d1bb;
+  padding: 15px 0 13px 0;
+  width: 100%;
+  height: auto;
+
+  color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-transform: uppercase;
+}
+
+.form-basket__submit:hover {
+  cursor: pointer;
+  background-color: #6ce1ca;
+}
+
+.form-basket__submit:active {
+  background-color: #46c1ae;
+}
+
+@media (min-width: @tablet-width-viewport) {
+  .form-basket {
+    padding: 0 30px;
+    padding-top: 34px;
+  }
+
+  .form-basket__title {
+    font-size: 30px;
+    line-height: 1.9;
+  }
+
+  .form-basket__descripton {
+    margin-top: 13px;
+    margin-bottom: 20px;
+
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .form-basket__list {
+    width: 350px;
+  }
+
+  .form-basket__submit {
+    width: 350px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+  }
+}

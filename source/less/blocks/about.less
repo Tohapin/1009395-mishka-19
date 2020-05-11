@@ -15,8 +15,9 @@
   color: @black-font;
 }
 
-.about__theses {
+.about__thesis {
   box-sizing: border-box;
+  min-height: 100px;
   margin: 0 0 30px 0;
   font-family: @open-sans;
   font-size: 17px;
@@ -25,7 +26,7 @@
   color: @black-font;
 }
 
-.about__theses--flower::before {
+.about__thesis--flower::before {
   content: "";
   display: block;
   margin-left: 8px;
@@ -37,11 +38,11 @@
   background-size: contain;
 }
 
-.about__theses--money {
+.about__thesis--money {
   margin-bottom: 36px;
 }
 
-.about__theses--money::before {
+.about__thesis--money::before {
   content: "";
   display: block;
   margin-bottom: 25px;
@@ -52,11 +53,11 @@
   background-size: contain;
 }
 
-.about__theses--heart {
+.about__thesis--heart {
   margin-bottom: 33px;
 }
 
-.about__theses--heart::before {
+.about__thesis--heart::before {
   content: "";
   display: block;
   margin-left: 7px;
@@ -68,11 +69,11 @@
   background-size: contain;
 }
 
-.about__theses--ball {
+.about__thesis--ball {
   margin-bottom: 33px;
 }
 
-.about__theses--ball::before {
+.about__thesis--ball::before {
   content: "";
   display: block;
   margin-left: 2px;
@@ -84,7 +85,7 @@
   background-size: contain;
 }
 
-.about__theses--rocket::before {
+.about__thesis--rocket::before {
   content: "";
   display: block;
   margin-bottom: 27px;
@@ -95,7 +96,7 @@
   background-size: contain;
 }
 
-.about__theses--gift::before {
+.about__thesis--gift::before {
   content: "";
   display: block;
   margin-left: 2px;
@@ -105,4 +106,57 @@
   background: url("../img/icon-feature-gift.svg") no-repeat;
   background-position: top;
   background-size: contain;
+}
+
+@media (min-width: @tablet-width-viewport) {
+  .about {
+    .container(@tablet-width);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .about__theses {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 590px;
+  }
+
+  .about__title {
+    width: 100%;
+    margin-bottom: 53px;
+
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 1.16;
+    letter-spacing: 1px;
+  }
+
+  .about__thesis {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    margin-bottom: 55px;
+
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 1.2px;
+  }
+}
+
+
+@media (min-width: @desktop-width-viewport) {
+  .about__title {
+    margin-top: 12px;
+    margin-bottom: 53px;
+
+    font-size: 53px;
+  }
+
+  .about {
+    width: 700px;
+  }
 }

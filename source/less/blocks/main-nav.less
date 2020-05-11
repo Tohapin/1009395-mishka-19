@@ -67,3 +67,28 @@
 .main-nav__wrapper--hidden {
   display: none;
 }
+
+@media (min-width: @tablet-width-viewport) {
+  .main-nav {
+    .container(670px);
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper--hidden {
+    display: block;
+  }
+
+  .main-nav__wrapper {
+    flex-direction: row;
+  }
+}
+
+
+@media (min-width: @desktop-width-viewport) {
+  .main-nav {
+    .container(@desktop-width);
+  }
+}

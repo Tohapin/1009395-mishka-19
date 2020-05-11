@@ -1,0 +1,30 @@
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-wrapper__window {
+  position: fixed;
+  width: 320px;
+  height: 336px;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -168px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: solid 1px #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+@media (min-width: @tablet-width-viewport) {
+  .modal-wrapper__window {
+    width: 566px;
+    margin-left: -283px;
+  }
+}

@@ -6,11 +6,15 @@
   margin-bottom: 42px;
 
   .button {
-    order: 7;
     .container(260px);
   }
 
   .separating-line();
+}
+
+.product-of-the-week__block {
+  display: flex;
+  flex-direction: column;
 }
 
 .product-of-the-week::after {
@@ -44,7 +48,6 @@
 }
 
 .product-of-the-week__product-description {
-  order: 3;
   .container(260px);
   margin-bottom: 16px;
 
@@ -55,7 +58,6 @@
 }
 
 .product-of-the-week__product-characteristics {
-  order: 4;
   .container(260px);
   margin-bottom: 27px;
 }
@@ -63,9 +65,12 @@
 .product-of-the-week__image {
   width: 260px;
   height: 315px;
-  order: 5;
   .container(260px);
   margin-bottom: 24px;
+}
+
+.product-of-the-week__picture {
+  .container(260px);
 }
 
 .product-of-the-week__price {
@@ -76,6 +81,179 @@
   line-height: 1.41;
   color: @gray-font;
 
-  order: 6;
   margin-bottom: 27px;
+}
+
+@media (min-width: @tablet-width-viewport) {
+  .product-of-the-week {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 42px;
+
+    .button {
+      width: 290px;
+      margin: 0;
+    }
+
+    .separating-line();
+  }
+
+  .product-of-the-week__title {
+    order: 1;
+    width: 100px;
+    margin: 0;
+    margin-top: 17px;
+    margin-right: 13px;
+    text-align: center;
+
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+
+  .product-of-the-week__product-title {
+    order: 2;
+    width: auto;
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-family: @open-sans;
+    font-size: 43px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: @black-font;
+  }
+
+  .product-of-the-week__product-description {
+    margin: 0;
+    margin-top: 41px;
+    margin-bottom: 35px;
+    width: 290px;
+
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.8;
+  }
+
+  .product-of-the-week__product-characteristics {
+    width: 290px;
+    margin: 0;
+  }
+
+  .product-of-the-week__price {
+    display: block;
+    width: 290px;
+    margin-bottom: 33px;
+
+    align-self: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.7px;
+  }
+
+  .product-of-the-week__image {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 333px;
+    height: 404px;
+    margin: 0;
+  }
+
+  .product-of-the-week__block--title {
+    .container(@tablet-width);
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .product-of-the-week__block--description {
+    .container(@tablet-width);
+    position: relative;
+    margin-bottom: 55px;
+  }
+
+  .product-of-the-week__block--order {
+    .container(@tablet-width);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+    align-items: flex-start;
+  }
+}
+
+
+@media (min-width: @desktop-width-viewport) {
+  .product-of-the-week {
+    margin-top: 109px;
+    margin-bottom: 42px;
+
+    .button {
+      width: 290px;
+      margin: 0;
+    }
+
+    .separating-line();
+  }
+
+  .product-of-the-week__block--title {
+    .container(@desktop-width);
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .product-of-the-week__title {
+    order: 1;
+    width: 100px;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-left: 32px;
+    text-align: center;
+
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+
+  .product-of-the-week__product-title {
+    z-index: 2;
+    order: 2;
+    width: auto;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 40px;
+
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1.08;
+    letter-spacing: 2.5px;
+  }
+
+  .product-of-the-week__block--description {
+    .container(@desktop-width);
+    position: relative;
+    margin-bottom: 108px;
+    padding-left: 175px;
+  }
+
+  .product-of-the-week__product-description {
+    margin-top: 43px;
+    margin-bottom: 48px;
+  }
+
+  .product-of-the-week__image {
+    z-index: 1;
+    top: -115px;
+    width: 525px;
+    height: 636px;
+    margin: 0;
+  }
+
+  .product-of-the-week__block--order {
+    .container(@desktop-width);
+    padding-left: 175px;
+    margin-bottom: 50px;
+  }
 }
