@@ -1,4 +1,5 @@
 .page-header {
+
   z-index: 2;
   position: relative;
   display: flex;
@@ -19,13 +20,9 @@
   height: 35px;
 }
 
-.page-header__logo-mobile {
-  display: block;
-}
-
-
 @media (min-width: @tablet-width-viewport) {
   .page-header {
+    .container(@tablet-width);
     flex-direction: row;
     min-height: 88px;
 
@@ -33,22 +30,29 @@
   }
 
   .page-header__logo {
-    margin: 0;
-    width: 90%;
+    position: absolute;
+    margin-top: 22px;
+    margin-bottom: 19px;
   }
 
   .page-header__logo-image {
     width: 112px;
     height: 46px;
   }
-
-  .page-header__logo-mobile {
-    display: none;
-  }
 }
 
-
 @media (min-width: @desktop-width-viewport) {
+  .page-header {
+    .container(@desktop-width);
+  }
+
+  .page-header__logo {
+    margin: 0 auto;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+  }
+
   .page-header__logo-image {
     width: 149px;
     height: 72px;
