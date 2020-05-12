@@ -8,6 +8,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 32px;
+
   font-family: @open-sans;
   font-size: 25px;
   font-weight: bold;
@@ -16,9 +17,12 @@
 }
 
 .about__thesis {
+  position: relative;
   box-sizing: border-box;
   min-height: 100px;
   margin: 0 0 30px 0;
+  padding-top: 55px;
+
   font-family: @open-sans;
   font-size: 17px;
   font-weight: bold;
@@ -27,6 +31,8 @@
 }
 
 .about__thesis--flower::before {
+  position: absolute;
+  top: 0;
   content: "";
   display: block;
   margin-left: 8px;
@@ -43,6 +49,8 @@
 }
 
 .about__thesis--money::before {
+  position: absolute;
+  top: 1px;
   content: "";
   display: block;
   margin-bottom: 25px;
@@ -58,6 +66,9 @@
 }
 
 .about__thesis--heart::before {
+  position: absolute;
+  top: 6px;
+  left: 1px;
   content: "";
   display: block;
   margin-left: 7px;
@@ -74,6 +85,8 @@
 }
 
 .about__thesis--ball::before {
+  position: absolute;
+  top: 3px;
   content: "";
   display: block;
   margin-left: 2px;
@@ -86,6 +99,9 @@
 }
 
 .about__thesis--rocket::before {
+  position: absolute;
+  top: 5px;
+  left: -6px;
   content: "";
   display: block;
   margin-bottom: 27px;
@@ -97,6 +113,9 @@
 }
 
 .about__thesis--gift::before {
+  position: absolute;
+  top: 3px;
+  left: 1px;
   content: "";
   display: block;
   margin-left: 2px;
@@ -114,36 +133,58 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 29px;
   }
 
   .about__theses {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    max-height: 590px;
   }
 
   .about__title {
     width: 100%;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
 
     font-size: 43px;
     font-weight: bold;
     line-height: 1.16;
-    letter-spacing: 1px;
+    letter-spacing: -0.5px;
   }
 
   .about__thesis {
     display: flex;
     flex-direction: column;
-    width: 335px;
+    width: 334px;
     margin-bottom: 55px;
 
     font-size: 20px;
     font-weight: bold;
     line-height: 1.1;
-    letter-spacing: 1.2px;
+  }
+
+  .about__thesis--flower {
+    order: 1;
+  }
+
+  .about__thesis--money {
+    order: 3;
+  }
+
+  .about__thesis--heart {
+    order: 5;
+  }
+
+  .about__thesis--ball {
+    order: 2;
+  }
+
+  .about__thesis--rocket {
+    order: 4;
+  }
+
+  .about__thesis--gift {
+    order: 6;
   }
 }
 
