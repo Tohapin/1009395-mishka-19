@@ -1,5 +1,4 @@
 .page-header {
-
   z-index: 2;
   position: relative;
   display: flex;
@@ -18,6 +17,17 @@
 .page-header__logo-image {
   width: 86px;
   height: 35px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width-viewport) {
@@ -25,11 +35,11 @@
     .container(@tablet-width);
     flex-direction: row;
     min-height: 88px;
-
     box-shadow: inset 0 -1px 0 0 #ececec;
   }
 
   .page-header__logo {
+    z-index: 2;
     position: absolute;
     margin-top: 22px;
     margin-bottom: 19px;
@@ -47,6 +57,7 @@
   }
 
   .page-header__logo {
+    width: 150px;
     margin: 0 auto;
     margin-top: 10px;
     left: 0;

@@ -51,6 +51,28 @@
   .container(260px);
 }
 
+.contacts__email {
+  display: inline-block;
+  box-shadow: 0 1px 0 0 #46c1ae;
+
+  color: @gray-font;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+
+    color: #46c1ae;
+  }
+
+  &:active {
+    box-shadow: 0 1px 0 0 fade(#46c1ae, 10%);
+
+    color: fade(#46c1ae, 30%);
+  }
+}
+
 @media (min-width: @tablet-width-viewport) {
   .contacts {
     margin-top: 80px;
@@ -131,7 +153,6 @@
 
     font-size: 53px;
     line-height: 1.08;
-    letter-spacing: 3px;
 
     &::before {
       content: "";

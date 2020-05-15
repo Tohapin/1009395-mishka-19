@@ -36,10 +36,22 @@
 }
 
 .reviewer-slider__btn {
+  cursor: pointer;
   padding: 10px;
   background-color: transparent;
   width: 100%;
   border: 1px solid #ececec;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviewer-slider__btn--previous::before {

@@ -16,6 +16,29 @@
   padding-bottom: 27px;
   border: 1px solid #ececec;
   border-top: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.product:hover .product__description,
+.product:focus .product__description {
+  outline: none;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.product:active .product__description {
+  outline: none;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .product__description-title {
@@ -26,6 +49,18 @@
   font-weight: bold;
   line-height: 1.41;
   color: @black-font;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    cursor: pointer;
+    color: fade(@black-font, 60%);
+  }
+
+  &:active {
+    outline: none;
+    color: fade(@black-font, 30%);
+  }
 }
 
 .product__description-value {
@@ -48,6 +83,22 @@
   color: @black-font;
 }
 
+.product__description-title:hover ~ .product__description-price,
+.product__description-title:focus ~ .product__description-price {
+  &::after {
+    outline: none;
+    content: url("../img/icon-cart-seafoam-blue.svg");
+    opacity: 1;
+  }
+}
+
+.product__description-title:active ~ .product__description-price {
+  &::after {
+    outline: none;
+    opacity: 0.3;
+  }
+}
+
 .product__description-price::before {
   content: "";
   position: absolute;
@@ -63,6 +114,7 @@
   content: url("../img/icon-cart.svg");
   top: 1px;
   right: -2px;
+  opacity: 0.2;
 }
 
 @media (min-width: @tablet-width-viewport) {
