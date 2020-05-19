@@ -1,0 +1,47 @@
+/* Video */
+
+.video {
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40.5px;
+  margin-left: -48.5px;
+  z-index: 2;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.video__button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+
+.video__button-icon {
+  fill: #ffffff;
+}
+
+.video__button:focus {
+  outline: none;
+}
+
+.video__button:hover .video__button-shape,
+.video__button:focus .video__button-shape {
+  transform: scale(1.2);
+}
+
+.video__button:active .video__button-shape {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+@media (min-width: @desktop-width-viewport) {
+  .video {
+    position: absolute;
+  }
+}

@@ -34,8 +34,7 @@
   }
 }
 
-.site-list__link--basket::before {
-  content: "";
+.site-list__icon--basket {
   position: absolute;
   top: 4px;
   left: -43px;
@@ -43,22 +42,20 @@
   display: block;
   width: 18px;
   height: 18px;
-  background: url("../img/icon-cart.svg") no-repeat center center;
   opacity: 0.2;
 }
 
-.site-list__link--basket:hover::before {
-  background: url("../img/icon-cart-seafoam-blue.svg") no-repeat center center;
+.site-list__icon--basket:hover {
+  fill: #63d1bb;
   opacity: 1;
 }
 
-.site-list__link--basket:active::before {
-  background: url("../img/icon-cart-seafoam-blue.svg") no-repeat center center;
+.site-list__icon--basket:active {
+  fill: #63d1bb;
   opacity: 0.3;
 }
 
-.site-list__link--search::before {
-  content: "";
+.site-list__icon--search {
   position: absolute;
   top: 4px;
   left: -43px;
@@ -66,17 +63,16 @@
   display: block;
   width: 18px;
   height: 18px;
-  background: url("../img/icon-search.svg") no-repeat center center;
   opacity: 0.2;
 }
 
-.site-list__link--search:hover::before {
-  background: url("../img/icon-search-seafoam-blue.svg");
+.site-list__icon--search:hover {
+  fill: #63d1bb;
   opacity: 1;
 }
 
-.site-list__link--search:active::before {
-  background: url("../img/icon-search-seafoam-blue.svg");
+.site-list__icon--search:active {
+  fill: #63d1bb;
   opacity: 0.3;
 }
 
@@ -119,7 +115,7 @@
     vertical-align: middle;
   }
 
-  .site-list__visually-hidden {
+  .site-list__hide-desktop {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -200,7 +196,7 @@
     line-height: 1.41;
   }
 
-  .site-list__link--basket::before {
+  .site-list__icon--basket {
     top: 2px;
     left: -50px;
   }
@@ -219,7 +215,7 @@
     line-height: 1.41;
   }
 
-  .site-list__link--search::before {
+  .site-list__icon--search {
     top: -5px;
     left: -6px;
   }
@@ -279,7 +275,7 @@
     margin-left: 290px;
   }
 
-  .site-list__link--search::before {
+  .site-list__icon--search {
     top: -18px;
     left: -6px;
   }
