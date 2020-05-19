@@ -6,12 +6,13 @@
 
 .separating-line() {
   position: relative;
+  .container(320px);
 
   &::after {
     content: "";
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 320px;
     height: 6px;
     background: url("../img/bg-zigzag-line.svg");
     background-size: contain;
@@ -21,12 +22,15 @@
 
   @media (min-width: @tablet-width-viewport) {
     &::after {
+      .container(@tablet-width + 100px);
+      left: -30px;
       height: 15px;
     }
   }
 
   @media (min-width: @desktop-width-viewport) {
     &::after {
+      .container(@desktop-width + 100px);
       height: 20px;
     }
   }

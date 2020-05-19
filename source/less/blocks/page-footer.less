@@ -15,6 +15,17 @@
   display: none;
 }
 
+.page-footer__logo-image {
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: fade(#46c1ae, 30%);
+  }
+}
+
 @media (min-width: @tablet-width-viewport) {
   .page-footer__wrapper {
     .container(@tablet-width);

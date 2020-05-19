@@ -6,11 +6,25 @@
 }
 
 .developer__text {
+  cursor: pointer;
   font-family: @open-sans;
   font-size: 19px;
   font-weight: bold;
   line-height: 0.95;
   color: @black-font;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.developer__text:hover ~ .developer__htmlacademy,
+.developer__text:focus ~ .developer__htmlacademy {
+  fill: #46c1ae;
+}
+
+.developer__text:active ~ .developer__htmlacademy {
+  fill: fade(#46c1ae, 30%);
 }
 
 .developer__htmlacademy {

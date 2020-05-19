@@ -1,4 +1,5 @@
 .button {
+  cursor: pointer;
   display: block;
   border: solid 2px #444444;
   background-color: transparent;
@@ -11,4 +12,18 @@
   line-height: 1.18;
   text-transform: uppercase;
   color: #444444;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: fade(@white-font, 30%);
+  }
 }
