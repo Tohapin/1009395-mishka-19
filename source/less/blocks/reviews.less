@@ -26,6 +26,14 @@
   .container(260px);
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .reviews {
+    &::before {
+      background: #f1f1f1 url("../img/review@2x.jpg");
+    }
+  }
+}
+
 @media (min-width: @tablet-width-viewport) {
   .reviews {
     .container(@tablet-width);
