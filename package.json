@@ -19,7 +19,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp start"
   },
   "browserslist": [
@@ -37,5 +37,13 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-svgstore": "^7.0.1",
+    "posthtml-include": "^1.4.3"
   }
 }
