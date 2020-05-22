@@ -18,11 +18,11 @@ var svgstore = require("gulp-svgstore");
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
-   .pipe(svgstore({
-   inlineSvg: true
-   }))
-   .pipe(rename("sprite.svg"))
-   .pipe(gulp.dest("build/img"));
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("images", function () {
@@ -53,13 +53,14 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-   server: "build/"
-   });
-   gulp.watch("source/less/**/*.less", gulp.series("css"));
-   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
-   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  });
-  gulp.task("refresh", function (done) {
+    server: "build/"
+    });
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+});
+
+gulp.task("refresh", function (done) {
    server.reload();
    done();
 });
