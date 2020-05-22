@@ -34,7 +34,7 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (popup_wrapper.classList.contains("modal-wrapper--show")) {
       popup_window.classList.remove("modal-wrapper--error");
-      setTimeout(()=>{popup_wrapper.classList.remove("modal-wrapper--show");}, 400);
+      setTimeout(function() {popup_wrapper.classList.remove("modal-wrapper--show");}, 400);
     }
   }
 });
