@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "del": "^5.1.0",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-posthtml": "^3.0.4",
