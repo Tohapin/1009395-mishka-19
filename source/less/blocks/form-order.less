@@ -3,11 +3,6 @@
   margin-bottom: 54px;
 }
 
-// .form-order__fieldset {
-//   margin: 0;
-//   padding: 0;
-//   border: none;
-// }
 
 .form-order__fieldset {
   margin: 0;
@@ -281,7 +276,7 @@ input:checked + .form-order__label--checkbox::after {
 
 .form-order__label--phone svg {
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 7px;
   opacity: 0.2;
 }
@@ -289,7 +284,7 @@ input:checked + .form-order__label--checkbox::after {
 .form-order__input--mail {
   width: 100%;
 
-  padding: 8px 0 15px 0;
+  padding: 12px 0 15px 0;
   border: none;
   border-bottom: 1px solid black;
   font-family: @open-sans;
@@ -332,7 +327,7 @@ input:checked + .form-order__label--checkbox::after {
 
 .form-order__label--mail svg {
   position: absolute;
-  top: -1px;
+  top: 10px;
   right: 3px;
   opacity: 0.2;
 }
@@ -381,6 +376,58 @@ input:checked + .form-order__label--checkbox::after {
   letter-spacing: normal;
   text-align: left;
   color: @gray-font;
+}
+
+.form-order__fieldset--phone label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+
+  font-family: @open-sans;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.2;
+  color: @seafoam-font;
+
+  &::after {
+    content: "";
+    display: flex;
+    margin-left: 30px;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+}
+
+.form-order__fieldset--mail label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+
+  font-family: @open-sans;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  color: @seafoam-font;
+
+  &::after {
+    content: "";
+    display: flex;
+    margin-left: 30px;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #63d1bb;
+  }
 }
 
 @media (min-width: @tablet-width-viewport) {
@@ -468,6 +515,22 @@ input:checked + .form-order__label--checkbox::after {
 
   .form-order__fieldset--mail {
     padding-bottom: 53px;
+  }
+
+  .form-order__fieldset--phone label {
+    width: 226px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-order__fieldset--mail label {
+    width: 226px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-order__fieldset--other span {
@@ -638,7 +701,7 @@ input:checked + .form-order__label--checkbox::after {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 56px;
+    margin-top: 50px;
 
     button {
       width: 230px;
@@ -690,7 +753,7 @@ input:checked + .form-order__label--checkbox::after {
     padding-bottom: 10px;
   }
 
-  .form-order__fieldset--phone span {
+  .form-order__fieldset--phone label {
     display: block;
     width: 160px;
     padding-right: 15px;
@@ -698,14 +761,15 @@ input:checked + .form-order__label--checkbox::after {
   }
 
   .form-order__fieldset--mail {
-    padding-top: 19px;
+    padding-top: 16px;
     padding-bottom: 48px;
   }
 
-  .form-order__fieldset--mail span {
+  .form-order__fieldset--mail label {
     display: block;
     width: 145px;
     padding-left: 20px;
+    padding-right: 10px;
     text-align: center;
   }
 
