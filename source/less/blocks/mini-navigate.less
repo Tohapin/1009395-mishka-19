@@ -135,11 +135,28 @@
     .container(@desktop-width);
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
     margin-bottom: 13px;
     margin-top: auto;
   }
 
   .mini-navigate__btn {
+    display: block;
+    height: auto;
     padding: 28px 300px 30px 35px;
+  }
+
+  .mini-navigate__btn--interior {
+    &:hover,
+    &:focus {
+      padding-bottom: 35px;
+    }
+  }
+
+  .mini-navigate__btn--toys {
+    &:hover,
+    &:focus {
+      padding-bottom: 35px;
+    }
   }
 }
